@@ -3072,6 +3072,7 @@ public class TestVoltCompiler extends TestCase {
         //Defaultprocread.
         goodRoleDDL("create role r1 with defaultprocread;", new TestRole("r1", false, false, false, true));
         goodRoleDDL("create role r1 with AdHoc,SysProc,DefaultProc,DefaultProcRead;", new TestRole("r1", true, true, true, true));
+        goodRoleDDL("create role r1 with AdHoc,Admin,DefaultProc,DefaultProcRead;", new TestRole("r1", true, true, true, true));
     }
 
     public void testBadRoleDDL() throws Exception {
