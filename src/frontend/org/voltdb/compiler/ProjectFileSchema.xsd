@@ -71,7 +71,7 @@
       <xsd:element name="group" minOccurs="1" maxOccurs="unbounded">
         <xsd:complexType>
           <xsd:attribute name="name" type="xsd:string" use="required"/>
-          <xsd:attribute name="admin" type="xsd:boolean" default="false"/>
+          <xsd:attribute name="sysproc" type="xsd:boolean" default="false"/>
           <xsd:attribute name="defaultproc" type="xsd:boolean" default="false"/>
           <xsd:attribute name="adhoc" type="xsd:boolean" default="false"/>
           <xsd:attribute name="defaultprocread" type="xsd:boolean" default="false"/>
@@ -86,7 +86,7 @@
       <xsd:element name="role" minOccurs="1" maxOccurs="unbounded">
         <xsd:complexType>
           <xsd:attribute name="name" type="xsd:string" use="required"/>
-          <xsd:attribute name="admin" type="xsd:boolean" default="false"/>
+          <xsd:attribute name="sysproc" type="xsd:boolean" default="false"/>
           <xsd:attribute name="defaultproc" type="xsd:boolean" default="false"/>
           <xsd:attribute name="adhoc" type="xsd:boolean" default="false"/>
           <xsd:attribute name="defaultprocread" type="xsd:boolean" default="false"/>
